@@ -1,9 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 610" width="100%" height="100%" style="background: transparent; overflow: hidden; border-radius: 20px;">
   <defs>
-    <!-- Modern Fonts & System Fallbacks for GitHub Markdown -->
+    <!-- Self-Contained System Typography (Zero External Network Calls) -->
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;display=swap');
-
       * {
         box-sizing: border-box;
         margin: 0;
@@ -11,11 +9,11 @@
       }
 
       .font-sans {
-        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', Helvetica, Arial, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
       }
 
       .font-mono {
-        font-family: 'Fira Code', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco, Consolas, monospace;
+        font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
       }
 
       /* Ambient floating background motions */
@@ -238,15 +236,6 @@
       .pill-anim-11 { animation: itemFadeIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) 1.60s forwards; opacity: 0; }
     </style>
 
-    <!-- Filters -->
-    <filter id="glowSubtle" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-
     <!-- Animated Shifting Gradients -->
     <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#2563EB">
@@ -361,7 +350,7 @@
   <!-- ==================== LEFT COLUMN: CYBER ASCII TERMINAL (~38%) ==================== -->
   <g transform="translate(24, 24)">
     <!-- Main Left Container Card -->
-    <rect x="0" y="0" width="418" height="562" rx="16" fill="rgba(248, 250, 252, 0.9)" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1" />
+    <rect x="0" y="0" width="418" height="562" rx="16" fill="rgba(248, 250, 252, 0.95)" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1" />
     <!-- Glass Reflection Highlight -->
     <path d="M 0,16 Q 0,0 16,0 L 402,0 Q 418,0 418,16 L 418,120 L 0,60 Z" fill="url(#glassReflection)" />
 
@@ -422,7 +411,7 @@
             <tspan x="30" y="352.0" class="ascii-line al-16">      ▀████████████████████████▀      </tspan>
             <tspan x="30" y="372.0" class="ascii-line al-17">        ▀▀██████████████████▀▀        </tspan>
             <tspan x="30" y="392.0" class="ascii-line al-18"> 01001000 01001001 01010011 01010101 0</tspan>
-            <tspan x="30" y="412.0" class="ascii-line al-19"> >> SYNC: 100% | SYS: ONLINE | 1ms << </tspan>
+            <tspan x="30" y="412.0" class="ascii-line al-19"> -- SYNC: 100% | SYS: ONLINE | 1ms -- </tspan>
         </text>
 
         <!-- Blinking Terminal Cursor -->
@@ -458,7 +447,7 @@
   <!-- ==================== RIGHT COLUMN: PROFESSIONAL TERMINAL & PROFILE (~62%) ==================== -->
   <g transform="translate(460, 24)">
     <!-- Main Right Container Card -->
-    <rect x="0" y="0" width="696" height="562" rx="16" fill="rgba(248, 250, 252, 0.9)" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1" />
+    <rect x="0" y="0" width="696" height="562" rx="16" fill="rgba(248, 250, 252, 0.95)" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1" />
     <!-- Glass Top Reflection -->
     <path d="M 0,16 Q 0,0 16,0 L 680,0 Q 696,0 696,16 L 696,120 L 0,60 Z" fill="url(#glassReflection)" />
 
